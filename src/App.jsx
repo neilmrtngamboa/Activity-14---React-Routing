@@ -6,6 +6,8 @@ import Services from './pages/Services.jsx';
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.js';
 import Layout from './pages/Layout.jsx';
+import NotFound from './pages/Redirect.jsx';
+
 
 function App() {
 
@@ -18,6 +20,7 @@ function App() {
             <Route path='about' element={<About />} />
             <Route path='contact' element={<Contact />} />
             <Route path='services' element={<Services />} />
+            <Route path='*' element={<NotFound />} />
           </Route>
         </Routes>
       
